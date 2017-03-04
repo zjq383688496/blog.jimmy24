@@ -1,0 +1,19 @@
+{
+  "asi":       true,
+  "boss":      true,
+  "camelcase": false,
+  "eqeqeq":    true,
+  "eqnull":    true,
+  "expr":      true,
+  "freeze":    false,
+  "futurehostile": false,
+  "lastsemic": true,
+  "latedef":   false,
+  "loopfunc":  true,
+  "newcap":    true,
+  "nonew":     false,
+  "shadow":    false,
+  "strict":    false,
+  "undef":     false,
+  "unused":    false
+}

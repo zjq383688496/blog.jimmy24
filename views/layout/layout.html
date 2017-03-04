@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% include "../globel/head.html" ignore missing %}
+		{% block css %}{% endblock %}
+	</head>
+	<body>
+		<section>
+			<!-- header start -->
+			{% include "../globel/header.html" ignore missing %}
+			<!-- header end -->
+
+			<!-- container start -->
+			<div class="container">
+				<!-- body start -->
+				{% block body %}{% endblock %}
+				<!-- body end -->
+			</div>
+			<!-- container end -->
+		</section>
+		{% include "../globel/script.html" ignore missing %}
+		{% block js %}{% endblock %}
+	</body>
+</html>

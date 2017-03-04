@@ -1,0 +1,15 @@
+{% extends 'layout/layout.html' %}
+
+{% block body %}
+<div class="row">
+	<div class="col-md-12">
+		<h1 class="page-header">{{title}} {% if user %}<small>{{user.name}}</small>{% endif %}</h1>
+	</div>
+</div>
+{% endblock %}
+
+{% block css %}
+{% endblock %}
+
+{% block js %}
+{% endblock %}

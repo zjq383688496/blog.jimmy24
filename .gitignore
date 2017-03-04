@@ -1,0 +1,9 @@
+/demo
+/event
+/node_modules
+/public/build
+/public/css
+/public_event
+/upload
+/views/build
+npm-debug.log
