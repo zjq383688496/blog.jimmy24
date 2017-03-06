@@ -13,7 +13,7 @@ router.get('/', (req, res, next) => {
 	res.render('register', {
 		config: config,
 		title: '注册',
-		user: user
+		user: req.session.user
 	});
 });
 

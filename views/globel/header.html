@@ -2,46 +2,55 @@
 	<div class="header-banner swiper-container">
 		<ul class="swiper-wrapper">
 			<li class="swiper-slide" style="background-image: url(/img/banner/1.jpg);">
-				<div>1</div>
+				<article class="content">
+					<a href="/" class="c-h1">6个设计博客的入门教学</a>
+					<a href="/" class="c-btn">阅读</a>
+				</article>
 			</li>
 			<li class="swiper-slide" style="background-image: url(/img/banner/2.jpg);">
-				<div>2</div>
+				<article class="content">
+					<a href="/" class="c-h1">亲爱的客户：我们需要聊聊</a>
+					<a href="/" class="c-btn">阅读</a>
+				</article>
 			</li>
 			<li class="swiper-slide" style="background-image: url(/img/banner/3.jpg);">
-				<div>3</div>
+				<article class="content">
+					<a href="/" class="c-h1">为什么开发者应该学习设计</a>
+					<a href="/" class="c-btn">阅读</a>
+				</article>
 			</li>
 			<li class="swiper-slide" style="background-image: url(/img/banner/4.jpg);">
-				<div>4</div>
+				<article class="content">
+					<a href="/" class="c-h1">通过具体分析成为更优秀的<br>设计师</a>
+					<a href="/" class="c-btn">阅读</a>
+				</article>
 			</li>
 			<li class="swiper-slide" style="background-image: url(/img/banner/5.jpg);">
-				<div>5</div>
+				<article class="content">
+					<a href="/" class="c-h1">Web（UX）设计中的创造力在哪？</a>
+					<a href="/" class="c-btn">阅读</a>
+				</article>
 			</li>
 		</ul>
+		<div class="swiper-pagination"></div>
 	</div>
 	<div class="container">
-		<div class="">
-			<a href="/" class="navbar-brand">Jimmy24</a>
-		</div>
-		<nav>
-			<ul class="nav navbar-nav">
-				<li>
-					<a href="/post">发表文章</a>
-				</li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
+		<nav class="header-nav">
+			<a href="/" class="header-logo"></a>
+			<ul class="header-nav-ul">
 				{% if user %}
 				<li>
 					<a>{{user.name}}</a>
 				</li>
 				<li>
-					<a href="/logout">退出</a>
+					<a class="c-btn" href="/logout">退出</a>
 				</li>
 				{% else %}
 				<li>
-					<a href="/login">登录</a>
+					<a class="c-btn" href="/login">登录</a>
 				</li>
 				<li>
-					<a href="/register">注册</a>
+					<a class="c-btn" href="/register">注册</a>
 				</li>
 				{% endif %}
 			</ul>

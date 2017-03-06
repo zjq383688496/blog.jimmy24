@@ -9,13 +9,22 @@
 {% endblock %}
 
 {% block css %}
+<link rel="stylesheet" href="/css/index.css">
 {% endblock %}
 
 {% block js %}
 <script src="/js/util/swiper.js"></script>
 <script>
-var mySwiper = new Swiper ('.swiper-container', {
-		loop: true
-	})
+$(function() {
+	var mySwiper = new Swiper ('.swiper-container', {
+		autoplay: 8000,
+		loop: true,
+		autoplayDisableOnInteraction: false,
+		pagination: '.swiper-pagination',
+		paginationClickable: true,
+		speed: 1000,
+		effect: 'fade'
+	});
+});
 </script>
 {% endblock %}

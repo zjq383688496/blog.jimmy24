@@ -40,7 +40,7 @@ app.use(session({
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// cookie解析]
+// cookie解析
 app.use(cookieParser(config.cookieSecret));
 
 const oneDay = 86400000;

@@ -11,7 +11,7 @@ router.get('/', (req, res, next) => {
 	res.render('login', {
 		config: config,
 		title: '登录',
-		user: user
+		user: req.session.user
 	});
 });
 
