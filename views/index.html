@@ -1,4 +1,4 @@
-{% extends 'layout/layout.html' %}
+{% extends 'layout/layout-index.html' %}
 
 {% block body %}
 <div class="row">
@@ -12,4 +12,10 @@
 {% endblock %}
 
 {% block js %}
+<script src="/js/util/swiper.js"></script>
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+		loop: true
+	})
+</script>
 {% endblock %}

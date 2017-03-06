@@ -8,11 +8,8 @@ const User    = require('../models/user');
 console.log(User);
 
 // 注册界面
+router.get('/', User.isNotLogin);
 router.get('/', (req, res, next) => {
-	var user = req.session.user;
-	if (user) {
-		return res.send('请退出登录状态后再注册!');
-	}
 	res.render('register', {
 		config: config,
 		title: '注册',
@@ -21,6 +18,7 @@ router.get('/', (req, res, next) => {
 });
 
 // 用户注册
+router.post('/', User.isNotLogin);
 router.post('/', (req, res, next) => {
 	var body      = req.body,
 		name      = body.name,

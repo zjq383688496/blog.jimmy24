@@ -6,11 +6,8 @@ const crypto  = require('crypto');
 const User    = require('../models/user');
 
 // 登录界面
+router.get('/', User.isNotLogin);
 router.get('/', (req, res, next) => {
-	var user = req.session.user;
-	if (user) {
-		return res.send('您已经登录了!');
-	}
 	res.render('login', {
 		config: config,
 		title: '登录',
@@ -19,6 +16,7 @@ router.get('/', (req, res, next) => {
 });
 
 // 用户登录
+router.post('/', User.isNotLogin);
 router.post('/', (req, res, next) => {
 	var body      = req.body,
 		name      = body.name,
