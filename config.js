@@ -45,4 +45,4 @@ module.exports.cookieCtrl = {
 	signed: true,
 	maxAge: cookieExpiredTime
 };
-module.exports.title = '24小时';
+module.exports.title = 'Z24';
